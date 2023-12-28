@@ -1,0 +1,107 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+#head-section{
+    width: 100%;
+    height: 80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.subject{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.dark-light img{
+    width: 50px;
+    cursor: pointer;
+}
+
+#body-section{
+    width: 100%;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"]{
+    width: 85%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border: 2px solid green;
+    font-size: 18px;
+}
+
+.add-btn{
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #157c15;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.add-btn:hover{
+    background-color: #098009;
+    cursor: pointer;
+}
+
+#listFields{
+    margin-top: 30px;  
+}
+
+#listFields ul{
+    padding: 5px;
+    margin: 3px;
+    border: 0.5px solid #098009;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+i{
+    cursor: pointer;
+}
+
+#footer-section{
+    width: 100%;
+    height: 60px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
