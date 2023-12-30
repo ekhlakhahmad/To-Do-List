@@ -1,8 +1,17 @@
 const Dark = document.getElementById("darkLight");
 const body = document.querySelector("body");
 
+let currMode = "light";
+
 Dark.addEventListener("click", function (e) {
-  body.style.backgroundColor = "#000000";
+  if (currMode === "light") {
+    currMode = "dark";
+    body.style.backgroundColor = "#000000";
+  }
+  else {
+    currMode = "light";
+    body.style.backgroundColor = "#ffffff";
+  }
 });
 
 let inputField = document.getElementById("inputBox");
