@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do-List</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div id="head-section">
         <div class="logo">
@@ -23,22 +27,27 @@
     <div id="body-section">
         <div class="container">
             <input type="text" placeholder="Enter your Task" id="inputBox">
-            <button class="add-btn" id="addBtn">Add</button>
+            <button class="add-btn" id="addBtn" onclick="AddTask()">Add</button>
         </div>
         <div id="listFields">
-            
+
         </div>
     </div>
 
-    <div id="footer-section">
-        <div class="social-media">
-            <a href=""><img src="" alt=""></a>
+    <div class="footer-position">
+        <div class="social-icons">
+            <a href="https://wa.me/9576650491" target="_blank"><img src="./Images/whatsapp.png" alt="whatsApp"></a>
+            <a href="https://www.instagram.com/ekhlakhahmad9/" target="_blank"><img src="./Images/instagram.png"
+                    alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/ekhlakhahmad/" target="_blank"><img src="./Images/linkedin.png"
+                    alt="linkedIn"></a>
+            <a href="https://www.github.com/ekhlakhahmad" target="_blank"><img src="./Images/github.png"
+                    alt="github"></a>
         </div>
-        <p>
-            Developed by <span> ❤️ Ekhlakh Ahmad ❤️ </span>
-        </p>
+        <h6>GET IN TOUCH</h6>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

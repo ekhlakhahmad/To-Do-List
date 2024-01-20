@@ -7,8 +7,7 @@ Dark.addEventListener("click", function (e) {
   if (currMode === "light") {
     currMode = "dark";
     body.style.backgroundColor = "#000000";
-  }
-  else {
+  } else {
     currMode = "light";
     body.style.backgroundColor = "#ffffff";
   }
@@ -18,11 +17,10 @@ let inputField = document.getElementById("inputBox");
 let addBtn = document.getElementById("addBtn");
 let listFields = document.getElementById("listFields");
 
-addBtn.addEventListener("click", function (e) {
+const AddTask = () => {
   if (inputField.value == "") {
     alert("Please Enter Tast!!!");
-  }
-  else {
+  } else {
     let newElement = document.createElement("ul");
     newElement.innerHTML = `${inputField.value} <i class="fa-solid fa-trash-can"></i>`;
     listFields.appendChild(newElement);
@@ -32,5 +30,12 @@ addBtn.addEventListener("click", function (e) {
     function remove() {
       newElement.remove();
     }
+  }
+};
+
+inputField.addEventListener("keyup", function (event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    addBtn.click();
   }
 });

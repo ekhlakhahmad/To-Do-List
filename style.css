@@ -1,5 +1,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
-
+  :root{
+    --saturation: 100%;
+    --hue: 600;
+    --light:32%;
+  }
 
 *{
     margin: 0;
@@ -56,22 +60,24 @@ input[type="text"]{
     outline: none;
     border: none;
     padding: 5px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    border: 2px solid hsl(var(--hue), var(--saturation), var(--light));
     font-size: 18px;
 }
 
 .add-btn{
-    width: 50px;
+    width: 60px;
     padding: 5px;
+    margin-left: 5PX;
     border-radius: 5px;
-    background-color: #157c15;
+    background-color: hsl(var(--hue), var( --saturation), var(--light));
     font-weight: 800;
     border: none;
     outline: none;
     color: #fff;
 }
 .add-btn:hover{
-    background-color: #098009;
+    background-color:hsl(var(--hue), var( --saturation), var(--light)) ;
     cursor: pointer;
 }
 
@@ -82,7 +88,7 @@ input[type="text"]{
 #listFields ul{
     padding: 5px;
     margin: 3px;
-    border: 0.5px solid #098009;
+    border: 0.5px solid hsl(var(--hue), var( --saturation), var(--light));
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
@@ -94,14 +100,37 @@ i{
     cursor: pointer;
 }
 
-#footer-section{
+.footer-position{
     width: 100%;
     height: 60px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    flex-direction: column;
     bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    gap: 3px;
     background-color: #fff;
+}
+.footer-position .social-icons a{
+    text-decoration: none;
+    padding: 2px;
+}
+.footer-position .social-icons a img{
+    width: 20px;
+}
+.footer-position .social-icons a img:hover{
+    transform: scale(1.1);
+}
+
+
+/************** RESPONSIVE *************/
+@media screen and (max-width: 768px){
+    .subject{
+        font-size: 32PX;
+    }
+    #body-section{
+        width: 95%;
+    }
 }
