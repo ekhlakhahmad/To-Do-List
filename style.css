@@ -1,4 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
   :root{
     --saturation: 100%;
     --hue: 600;
@@ -14,24 +15,56 @@
 }
 
 #head-section{
-    width: 100%;
-    height: 80px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #fff;
+    padding: 5px 3vw;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    img{
+        width: 60px;
+    }
+    h1{
+        font-size: 3vmax;
+        font-weight: 600;
+    }
+}
+.themes{
+    display: flex;
+    gap: 5px;
+}
+.theme{
+    width: 15px;
+    height: 15px;
+    background-color: black;
 }
 
-.logo img{
-    width: 80px;
+.darkBg{
+    background-color: black;
+    cursor: pointer;
+}
+.blueBg{
+    background-color: blue;
+    cursor: pointer;
+}
+.greenBg{
+    background-color: green;
+    cursor: pointer;
+}
+.pinkBg{
+    background-color: pink;
+    cursor: pointer;
+}
+.yellowBg{
+    background-color: yellow;
+    cursor: pointer;
+}
+.lightBg{
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
 }
 
-.subject{
-    font-size: 42px;
-    font-weight: 800;
-}
+
 
 .dark-light img{
     width: 50px;
@@ -102,26 +135,20 @@ i{
 
 .footer-position{
     width: 100%;
-    height: 60px;
     display: flex;
     position: fixed;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     bottom: 0;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(79, 76, 76, 0.35) 0px 5px 15px;
     gap: 3px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    padding: 10px 0;
 }
-.footer-position .social-icons a{
-    text-decoration: none;
-    padding: 2px;
-}
-.footer-position .social-icons a img{
-    width: 20px;
-}
-.footer-position .social-icons a img:hover{
-    transform: scale(1.1);
+
+i{
+    font-size: 1.2rem;
 }
 
 
